@@ -20,3 +20,269 @@ html.dark body {
   background-color: #020617;
   color: #f8fafc;
 }
+
+/* Chatbot Markdown Styling */
+.markdown-content ul {
+  list-style-type: disc !important;
+  padding-left: 1.5rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  display: block !important;
+}
+
+.markdown-content ol {
+  list-style-type: decimal !important;
+  padding-left: 1.5rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  display: block !important;
+}
+
+.markdown-content li {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+  display: list-item !important;
+}
+
+.markdown-content li::marker {
+  color: inherit !important;
+}
+
+.user-message p, 
+.user-message li, 
+.user-message strong, 
+.user-message em {
+  color: white !important;
+}
+
+.user-message li::marker {
+  color: white !important;
+}
+
+.bot-message p, 
+.bot-message li, 
+.bot-message strong, 
+.bot-message em {
+  color: inherit !important;
+}
+
+.bot-message li::marker {
+  color: inherit !important;
+}
+
+.dark .bot-message p, 
+.dark .bot-message li, 
+.dark .bot-message strong, 
+.dark .bot-message em {
+  color: #cbd5e1 !important; /* slate-300 */
+}
+
+.dark .bot-message li::marker {
+  color: #94a3b8 !important; /* slate-400 */
+}
+
+.markdown-content p {
+  margin-bottom: 0.5rem !important;
+}
+
+.markdown-content p:last-child,
+.markdown-content ul:last-child,
+.markdown-content ol:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-content p:first-child,
+.markdown-content ul:first-child,
+.markdown-content ol:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-content strong {
+  font-weight: 700 !important;
+}
+
+.markdown-content em {
+  font-style: italic !important;
+}
+
+.markdown-content a {
+  color: #4f46e5 !important;
+  text-decoration: underline !important;
+}
+
+.dark .markdown-content a {
+  color: #818cf8 !important;
+}
+
+.user-message a {
+  color: white !important;
+  text-decoration: underline !important;
+}
+
+.markdown-content code {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+}
+
+.dark .markdown-content code {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.user-message code {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+}
+
+.markdown-content pre {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+}
+
+.dark .markdown-content pre {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.user-message pre {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.markdown-content blockquote {
+  border-left: 3px solid #e2e8f0;
+  padding-left: 1rem;
+  font-style: italic;
+  margin: 0.5rem 0;
+  color: #64748b;
+}
+
+.dark .markdown-content blockquote {
+  border-left-color: #334155;
+  color: #94a3b8;
+}
+
+.user-message blockquote {
+  border-left-color: rgba(255, 255, 255, 0.3) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.markdown-content hr {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  margin: 1rem 0;
+}
+
+.dark .markdown-content hr {
+  border-top-color: #334155;
+}
+
+.user-message hr {
+  border-top-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.markdown-content h1, 
+.markdown-content h2, 
+.markdown-content h3, 
+.markdown-content h4, 
+.markdown-content h5, 
+.markdown-content h6 {
+  font-weight: 700 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.2 !important;
+}
+
+.markdown-content h1 { font-size: 1.25rem !important; }
+.markdown-content h2 { font-size: 1.125rem !important; }
+.markdown-content h3 { font-size: 1rem !important; }
+.markdown-content h4, .markdown-content h5, .markdown-content h6 { font-size: 0.875rem !important; }
+
+.markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+}
+
+.markdown-content th, 
+.markdown-content td {
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.dark .markdown-content th, 
+.dark .markdown-content td {
+  border-color: #334155;
+}
+
+.markdown-content th {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-weight: 700;
+}
+
+.dark .markdown-content th {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.user-message th, 
+.user-message td {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.user-message th {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.markdown-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+  scrollbar-gutter: stable;
+}
+
+.dark .custom-scrollbar {
+  scrollbar-color: #475569 transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #6366f1; /* indigo-500 */
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #818cf8; /* indigo-400 */
+}
